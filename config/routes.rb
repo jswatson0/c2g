@@ -1,4 +1,6 @@
 Marketplace::Application.routes.draw do
+  devise_for :users
+
   resources :organizations
 
   resources :users
