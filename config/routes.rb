@@ -1,10 +1,15 @@
 Marketplace::Application.routes.draw do
+  devise_for :users
+
   resources :organizations
 
   resources :users
 
   resources :pages
-  root :to => 'pages#index'
+  
+  devise_scope :user do
+    root to: "devise/sessions#new"
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
