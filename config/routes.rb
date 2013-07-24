@@ -7,6 +7,7 @@ Marketplace::Application.routes.draw do
 
   resources :pages
   
+  root to: "pages#index"
   devise_scope :user do
     root to: "devise/sessions#new"
   end

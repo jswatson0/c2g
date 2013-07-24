@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 %h2 Connect2Good Landing
 
 =link_to 'Finalize your portfolio', new_user_path(@user)
 %br
 =link_to 'New Organization', new_organization_path
-
+=======
+-#%h2 Connect2Good Landing
+>>>>>>> origin/add-user-org-relationship
